@@ -3,7 +3,7 @@
   - kitty
   - gtk4
   - hyprpolkitagent
-  - hyprpaper
+  - mpvpaper
   - qt5-wayland
   - qt6-wayland
   - mako
