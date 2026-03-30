@@ -21,11 +21,14 @@
     "cpu",
     "memory",
     "custom/notifications",
+    "custom/lock",
+    "custom/reboot",
+    "custom/shutdown",
     "tray"
   ],
 
   "custom/launcher": {
-    "format": "",
+    "format": "",
     "tooltip": false,
     "on-click": "hyprlauncher"
   },
@@ -122,5 +125,26 @@
 
   "tray": {
     "spacing": 10
+  },
+
+  "custom/lock": {
+    "format": "󰌾",
+    "tooltip": true,
+    "tooltip-format": "Lock",
+    "on-click": "hyprlock"
+  },
+
+  "custom/reboot": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Reboot",
+    "on-click": "systemctl reboot"
+  },
+
+  "custom/shutdown": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Shutdown",
+    "on-click": "systemctl poweroff"
   }
 }

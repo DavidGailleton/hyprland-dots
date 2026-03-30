@@ -12,3 +12,9 @@
   - waybar
   - pipewire
   - pulseaudio
+  - yazi
+
+
+## SDDM
+
+the sddm config i choose : https://github.com/uiriansan/SilentSDDM

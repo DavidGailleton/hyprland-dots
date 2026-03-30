@@ -177,3 +177,29 @@ tooltip label {
   background-color: @red;
   border-radius: 8px;
 }
+
+#custom-lock,
+#custom-reboot,
+#custom-shutdown,
+#custom-logout {
+  background: @mantle;
+  margin: 6px 4px;
+  padding: 0 12px;
+  border-radius: 12px;
+}
+
+#custom-lock {
+  color: @blue;
+}
+
+#custom-reboot {
+  color: @yellow;
+}
+
+#custom-shutdown {
+  color: @red;
+}
+
+#custom-logout {
+  color: @mauve;
+}
