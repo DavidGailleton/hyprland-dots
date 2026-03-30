@@ -13,6 +13,11 @@
   - pipewire
   - pulseaudio
   - yazi
+  - fish
+  - starship
+  - zoxide
+  - fundle
+  - lsd
 
 
 ## SDDM
