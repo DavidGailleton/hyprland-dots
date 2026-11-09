@@ -42,7 +42,7 @@ Singleton {
     // ── shape & type ──
     readonly property int radius: 14
     readonly property int radiusSmall: 10
-    readonly property int gap: 12          // matches Hyprland gaps_out
+    readonly property int gap: 4          // matches Hyprland gaps_out
     readonly property int pad: 10
     readonly property int barHeight: 40
     readonly property string font: "Inter"

@@ -12,7 +12,7 @@ PanelWindow {
     screen: modelData
 
     anchors { top: true; left: true; right: true }
-    margins { top: 8; left: Theme.gap; right: Theme.gap }
+    margins { top: 4; left: Theme.gap; right: Theme.gap }
     implicitHeight: Theme.barHeight
     exclusiveZone: Theme.barHeight + 2
     color: "transparent"
