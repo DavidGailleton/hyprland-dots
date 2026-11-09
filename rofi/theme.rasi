@@ -1,0 +1,57 @@
+/* Glass launcher. Colors: colors.rasi (matugen) — fallback values below. */
+* {
+    primary: #9cd67d; on-primary: #0f3900; primary-cont: #245017; on-primary-cont: #b7f397;
+    surface: #11140fcc; surface-high: #272b24b3; on-surface: #e1e4d9; on-surface-var: #c2c8bb;
+    outline: #43493f;
+}
+@import "colors.rasi"
+
+* {
+    background-color: transparent;
+    text-color:       @on-surface;
+    border-color:     @outline;
+}
+
+window {
+    width:            38%;
+    location:         center;
+    anchor:           center;
+    background-color: @surface;
+    border:           1px;
+    border-radius:    18px;
+    padding:          18px;
+}
+
+mainbox      { spacing: 14px; children: [ inputbar, message, listview ]; }
+
+message      { background-color: transparent; padding: 0 6px; }
+textbox      { text-color: @on-surface-var; }
+
+inputbar {
+    background-color: @surface-high;
+    border-radius:    12px;
+    padding:          10px 14px;
+    spacing:          10px;
+    children:         [ prompt, entry ];
+}
+prompt       { text-color: @primary; }
+entry        { placeholder: "Search…"; placeholder-color: @on-surface-var; cursor: text; }
+
+listview {
+    lines:     8;
+    columns:   1;
+    spacing:   4px;
+    scrollbar: false;
+    fixed-height: true;
+}
+
+element {
+    padding:       8px 12px;
+    spacing:       12px;
+    border-radius: 10px;
+}
+element normal.normal,
+element alternate.normal { background-color: transparent; }
+element selected.normal  { background-color: @primary-cont; text-color: @on-primary-cont; }
+element-icon { size: 26px; vertical-align: 0.5; }
+element-text { vertical-align: 0.5; text-color: inherit; }

@@ -1,0 +1,42 @@
+# Matugen: wallpaper → Material You palette → every app.
+# Run through scripts/wallpaper.sh (sets wallpaper + calls matugen).
+# Templates live in ./templates; outputs are gitignored in the dots repo.
+
+[config]
+
+[templates.hyprland]
+input_path  = '~/.config/hypr/matugen/templates/hypr-colors.lua'
+output_path = '~/.config/hypr/colors.lua'
+post_hook   = 'hyprctl reload >/dev/null'
+
+[templates.hyprlock]
+input_path  = '~/.config/hypr/matugen/templates/hyprlock-colors.conf'
+output_path = '~/.config/hypr/hyprlock-colors.conf'
+
+[templates.quickshell]
+# Quickshell watches this file and recolors live.
+input_path  = '~/.config/hypr/matugen/templates/quickshell.json'
+output_path = '~/.config/hypr/quickshell/colors.json'
+
+[templates.kitty]
+input_path  = '~/.config/hypr/matugen/templates/kitty.conf'
+output_path = '~/.config/hypr/kitty/colors.conf'
+post_hook   = 'pkill -USR1 -x kitty || true'
+
+[templates.rofi]
+input_path  = '~/.config/hypr/matugen/templates/rofi.rasi'
+output_path = '~/.config/hypr/rofi/colors.rasi'
+
+[templates.gtk3]
+input_path  = '~/.config/hypr/matugen/templates/gtk.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+
+[templates.gtk4]
+input_path  = '~/.config/hypr/matugen/templates/gtk.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+# GTK only re-reads CSS on theme change: bounce the theme name
+post_hook   = "dconf write /org/gnome/desktop/interface/gtk-theme \"'Adwaita'\" && dconf write /org/gnome/desktop/interface/gtk-theme \"'adw-gtk3-dark'\""
+
+[templates.qt]
+input_path  = '~/.config/hypr/matugen/templates/qtct-colors.conf'
+output_path = '~/.config/hypr/qt/colors/matugen.conf'

@@ -1,0 +1,16 @@
+configuration {
+    modi:               "drun,run,window";
+    show-icons:         true;
+    icon-theme:         "Papirus-Dark";
+    font:               "Inter 11";
+    drun-display-format: "{name}";
+    display-drun:       "  Apps";
+    display-window:     "  Windows";
+    display-run:        "  Run";
+    run-command:        "uwsm app -- {cmd}";
+    run-shell-command:  "uwsm app -- kitty -e {cmd}";
+    hover-select:       true;
+    me-select-entry:    "";
+    me-accept-entry:    "MousePrimary";
+}
+@theme "theme.rasi"

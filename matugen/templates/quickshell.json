@@ -1,0 +1,6 @@
+{
+  "_generated": "matugen — do not edit",
+  "wallpaper": "{{image}}",
+<* for name, value in colors *>  "{{name}}": "{{value.default.hex}}",
+<* endfor *>  "_end": true
+}
