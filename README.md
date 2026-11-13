@@ -47,3 +47,7 @@ Quick settings: right-click Wi-Fi tile = network list, right-click Bluetooth = b
 - Which apps are translucent: `conf/rules.lua` (`glass-*` rules).
 - Palette style: `MATUGEN_SCHEME=scheme-vibrant scripts/wallpaper.sh <img>` (default `scheme-fidelity`).
 - Debug: `hyprctl configerrors`, `qs log`, `journalctl --user -t qs`.
+
+## License
+
+[MIT](LICENSE) for the configuration and the Quickshell code. The image in `wallpapers/` is not covered.
